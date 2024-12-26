@@ -51,6 +51,7 @@ function _RepConvGRC() {
             _pow_ena = false;
         switch(RCGP.getController()){
             case "building_barracks":
+                _power_div.css("padding-top",10)
                 $.each(MM.checkAndPublishRawModel('PlayerGods', {id : Game.player_id}).getProductionOverview(), function(ind, elem){
                     if (ind == 'hera') {
                         power_id = 'fertility_improvement',
